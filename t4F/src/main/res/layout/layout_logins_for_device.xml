@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_no_logo"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp" >
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Logins For Device"
+            android:textColor="@color/nav_bar_title_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_back_transparent"
+            android:onClick="cancel" />
+    </RelativeLayout>
+    
+    <com.igames2go.t4f.view.CustomTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip"
+        android:paddingLeft="20dip"
+        android:paddingTop="20dip"
+        android:text="@string/logins_for_friends_label1"
+        android:textColor="@color/screen_text_color" />
+
+    <com.igames2go.t4f.view.CustomTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip"
+        android:paddingLeft="20dip"
+        android:paddingTop="20dip"
+        android:text="@string/logins_for_friends_label2"
+        android:textColor="@color/screen_text_color" />
+
+    <ListView
+        android:id="@+id/lv_logins_for_device"
+        android:layout_width="fill_parent"
+        android:longClickable="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:background="@drawable/white_round_rect"
+        android:cacheColorHint="#00000000"
+         />
+
+</LinearLayout>

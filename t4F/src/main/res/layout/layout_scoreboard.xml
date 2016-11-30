@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_low_right"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_resign_buttonpanel" />
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="0dip"
+        android:layout_weight=".5" />
+
+    <LinearLayout android:layout_weight=".1"
+        android:id="@+id/screen_bkg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/scoreboard_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/i_icon_scoreboard"
+                android:visibility="invisible" />
+
+            <com.igames2go.t4f.view.CustomImageButton
+                android:id="@+id/button_gamestats"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background = "@drawable/trans"
+                android:layout_marginLeft="10dip"
+                android:onClick="showGameboard" />
+        </LinearLayout>
+
+        <TableLayout android:layout_marginTop="@dimen/padding_small"
+            android:id="@+id/tb_scoreboard"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="1dip"
+            android:paddingRight="1dip" >
+
+            <TableRow
+                android:id="@+id/tr_players"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                
+                android:background="@drawable/i_scoreboard_box_top"
+                android:gravity="center_vertical"
+                android:paddingTop="2dip" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@android:color/white"
+                        android:textSize="11dip" />
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/profile1"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    layout="@layout/image_frame"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/profile2"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    layout="@layout/image_frame"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/profile3"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    layout="@layout/image_frame"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/profile4"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    layout="@layout/image_frame"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <include
+                android:id="@+id/tr_points"
+                layout="@layout/include_score_row" />
+
+            <include
+                android:id="@+id/tr_cat1"
+                layout="@layout/include_score_row" />
+
+            <include
+                android:id="@+id/tr_cat2"
+                layout="@layout/include_score_row" />
+
+            <include
+                android:id="@+id/tr_cat3"
+                layout="@layout/include_score_row" />
+
+            <include
+                android:id="@+id/tr_cat4"
+                layout="@layout/include_score_row" />
+
+            <include
+                android:id="@+id/tr_cat5"
+                layout="@layout/include_score_row" />
+
+            <include
+                android:id="@+id/tr_cat6"
+                layout="@layout/include_score_row_catsurprise" />
+        </TableLayout>
+    </LinearLayout>
+
+   <!--  <View
+        android:layout_width="1dip"
+        android:layout_height="@dimen/activity_bottom_margin"
+         />
+ -->
+</LinearLayout>

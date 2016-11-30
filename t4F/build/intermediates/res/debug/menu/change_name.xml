@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"/>
+
+</menu>
+<!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/menu/change_name.xml -->

@@ -1,0 +1,150 @@
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    android:id="@+id/mainScreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_home"
+    android:orientation="vertical"  >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.igames2go.t4f.view.CustomButton
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/icon_menu"
+            android:onClick="showSlideMenu" />
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_weight="1"/>
+        <com.igames2go.t4f.view.CustomButton
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/icon_refresh_white"
+            android:onClick="refresh" />
+    </LinearLayout>
+
+	<View
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_weight="@integer/weight"/>
+<!--     <View
+        android:layout_width="wrap_content"
+        android:layout_height="70dip" /> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:orientation="horizontal"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_weight="1"/>
+        
+        <com.igames2go.t4f.view.CustomButton
+            android:id="@+id/invite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/icon_invite"
+            android:onClick="invite" />
+        
+        <com.igames2go.t4f.view.CustomButton
+            android:id="@+id/leaderboard"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/icon_leaderboard"
+            android:onClick="goLeaderboard"
+            android:visibility="visible" />
+		
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_mid"
+        android:layout_marginRight="@dimen/padding_mid"
+        android:background="@drawable/round_rect"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small" >
+
+        <include layout="@layout/include_profile_image_frame"/>
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/name"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip" 
+            android:textColor="@android:color/white" 
+            android:textSize = "@dimen/textsize_big"/>
+
+        <com.igames2go.t4f.view.CustomImageButton
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/icon_stats_white"
+            android:onClick="onStatsClick" />
+        
+		<com.igames2go.t4f.view.CustomImageButton
+		    android:id="@+id/fbLoginButton"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/button_fb_home_login" />
+        <!-- 
+        <com.facebook.widget.LoginButton
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_logout"
+            android:onClick="onBackClick"
+             />
+         -->
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/ll_hsv_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/horizontal_list_view_height"
+        android:layout_marginLeft="@dimen/padding_mid"
+        android:layout_marginRight="@dimen/padding_mid"
+        android:layout_marginTop="@dimen/padding_small"
+        android:background="@drawable/round_rect"
+        android:orientation="horizontal"
+        android:padding="10dip"
+         >
+
+        <com.devsmart.android.ui.HorizontalListView
+            android:id="@+id/gv_games"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" />
+        
+    </LinearLayout>
+	<View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/activity_bottom_margin"  android:layout_weight=".7"/>
+</LinearLayout>
+</FrameLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-mdpi/layout_homescreen.xml -->

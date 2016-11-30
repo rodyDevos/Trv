@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_high_right"
+    android:orientation="vertical" >
+
+    <com.igames2go.t4f.view.CustomButton
+        android:id="@+id/go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/icon_back_transparent"
+        android:onClick="onBack" />
+
+    <LinearLayout
+        android:layout_width="1dip"
+        android:layout_height="0dip"
+        android:layout_weight=".5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1"
+        android:background="@drawable/playerstats_background_new"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/tr_players"
+            android:layout_width="fill_parent"
+            android:layout_height="110dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="60dp"
+             >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:baselineAligned="false"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <include
+                    android:id="@+id/pla_profile"
+                    layout="@layout/image_frame" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="5dp" >
+
+                    <com.igames2go.t4f.view.CustomImageView
+                        android:id="@+id/iv_award_badge"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="3dip"
+                        android:layout_marginLeft="0dp" />
+                    
+					<LinearLayout
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="12dp"
+	                    android:gravity="center_vertical"
+	                    android:background="@android:color/darker_gray"
+	                    android:layout_marginLeft="3dp" >
+	                    
+	                    <com.igames2go.t4f.view.CustomTextView
+	                        android:id="@+id/tv_scored"
+	                        android:layout_width="0dp"
+	                        android:layout_height="12dp"
+	                        android:background="#ffff00"
+	                        android:gravity="right"
+	                        android:minWidth="40dip"
+	                        android:paddingRight="5dip"
+	                        android:textColor="@android:color/black"
+	                        android:textSize="10sp" />
+						
+						<com.igames2go.t4f.view.CustomTextView
+	                        android:id="@+id/tv_remaining"
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="12dp"
+	                        android:background="@android:color/darker_gray"
+	                        android:gravity="left"
+	                        android:minWidth="40dip"
+	                        android:paddingLeft="5dip"
+	                        android:textColor="@android:color/white"
+	                        android:textSize="10sp" /> 
+	                </LinearLayout>
+                    
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.igames2go.t4f.view.CustomTextView
+                android:id="@+id/tv_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="5dp"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:lines="1"
+                android:minWidth="50dip"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_very_small"
+                android:visibility="visible" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical" >
+
+                 <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight=".1"
+                    android:orientation="vertical" >
+
+                    <com.igames2go.t4f.view.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Ranking"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_small" />
+
+                    <com.igames2go.t4f.view.CustomTextView
+                        android:id="@+id/tv_ranking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_small" />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight=".1"
+                    android:orientation="vertical" >
+
+                    <com.igames2go.t4f.view.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Points"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_small" />
+
+                    <com.igames2go.t4f.view.CustomTextView
+                        android:id="@+id/tv_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_small" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight=".1"
+                    android:orientation="vertical" >
+
+                    <com.igames2go.t4f.view.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Games Won"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_small" />
+
+                    <com.igames2go.t4f.view.CustomTextView
+                        android:id="@+id/tv_won_played"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_small" />
+                </LinearLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight=".1"
+            android:fillViewport="true"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" >
+
+            <TableLayout
+                android:id="@+id/tb_scoreboard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip" >
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-hdpi/layout_player_stat.xml -->

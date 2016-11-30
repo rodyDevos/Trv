@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/profile_width"
+    android:layout_height="@dimen/profile_height" 
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <com.igames2go.t4f.view.CustomProfileView
+        android:id="@+id/iv_pic"
+        android:layout_width="@dimen/profile_width"
+    android:layout_height="@dimen/profile_height" 
+         />
+
+    <ImageView
+        android:id="@+id/player_no_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/icon_no_more_play"
+        android:visibility="invisible" />
+
+     <com.igames2go.t4f.view.CustomImageView
+        android:id="@+id/iv_award"
+        android:layout_width="@dimen/image_small" 
+        android:layout_height="@dimen/image_small"
+        android:layout_gravity="bottom|left"
+        android:minHeight="15dip"
+        android:minWidth="15dip" />
+    <com.igames2go.t4f.view.CustomTextView
+        android:id="@+id/tv_award"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:visibility="gone"
+        android:minHeight="25dip"
+        android:minWidth="25dip" 
+        android:background="@drawable/icon_chat_badge"/>
+
+    <com.igames2go.t4f.view.CustomImageView
+        android:id="@+id/iv_ribbon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right" 
+        android:layout_marginBottom="-5dip"/>
+
+     <com.igames2go.t4f.view.CustomImageView
+        android:id="@+id/iv_fav"
+        android:src="@drawable/icon_favoritebadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="-3dip"
+        android:layout_marginTop="-3dip"
+        android:visibility="gone" 
+        />
+</FrameLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-xlarge/include_profile_image_frame.xml -->

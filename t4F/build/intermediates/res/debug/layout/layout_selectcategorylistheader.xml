@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@color/gray_color">
+
+    <com.igames2go.t4f.view.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="FAVORITE"
+        android:id="@+id/txtSectionTitle"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+</LinearLayout>
+<!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout/layout_selectcategorylistheader.xml -->

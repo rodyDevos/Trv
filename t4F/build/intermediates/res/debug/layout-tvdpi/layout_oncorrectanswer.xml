@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_low_right"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_resign_buttonpanel" />
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="1dip"
+        android:layout_weight="1" />
+
+    <include layout="@layout/layout_share_report_help_panel" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/round_rect"
+        android:orientation="vertical"
+        android:paddingBottom="20dip" android:layout_gravity="center" >
+
+        <include layout="@layout/question_panel" />
+        <!-- <com.igames2go.t4f.view.CustomTextView -->
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dip"
+            android:text="@string/youselected"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_mid"
+            android:textStyle="bold" />
+
+        <!-- <com.igames2go.t4f.view.CustomButton -->
+
+                <LinearLayout
+            android:id="@+id/ll_correct"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/button_a"
+            android:gravity="center" >
+
+            <com.igames2go.t4f.view.CustomButton
+                android:id="@+id/btn_correct_option"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-80dip"
+                android:background="#00ffffff"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Option A"
+                android:textSize="@dimen/textsize_answer" />
+        </LinearLayout>
+
+
+        <!-- <com.igames2go.t4f.view.CustomTextView -->
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:text="@string/goodjobmsg"
+            android:textColor="@color/green_shade"
+            android:textSize="@dimen/textsize_big"
+            android:textStyle="bold" />
+
+        <!-- <color name="green_shade">#00A44f</color> -->
+
+
+        <!-- <com.igames2go.t4f.view.CustomTextView -->
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/tv_correct_answer_label2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:lines="3"
+            android:text="@string/passedcategorymsg"
+            android:textColor="@color/green_shade"
+            android:textSize="@dimen/textsize_small"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dip" android:layout_weight=".5"
+        android:layout_height="@dimen/activity_bottom_margin" />
+
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-tvdpi/layout_oncorrectanswer.xml -->

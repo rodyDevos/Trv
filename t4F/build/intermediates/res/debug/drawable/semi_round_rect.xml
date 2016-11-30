@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <solid android:color="#838487" />
+    <stroke android:color="#afd0d9" android:width="1dip" />
+
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+
+</shape><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/drawable/semi_round_rect.xml -->

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_low_right"
+    >
+
+    <include layout="@layout/layout_resign_buttonpanel" />
+
+    <LinearLayout
+        android:id="@+id/screen_bkg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/gamestats_background2015_1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" >
+
+            <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="fill_parent"
+                 android:gravity="center_vertical"
+                 android:textColor="@android:color/white"
+                 android:textSize="11dip" />
+
+        </LinearLayout>
+
+        <TableLayout 
+            android:layout_marginTop="@dimen/padding_small"
+            android:id="@+id/tb_scoreboard"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="1dip"
+            android:paddingRight="1dip" >
+
+            <TableRow
+                android:id="@+id/tr_players"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingTop="2dip" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="55dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/profile1"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    layout="@layout/image_frame"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/profile2"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    layout="@layout/image_frame"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/profile3"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    layout="@layout/image_frame"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/profile4"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    layout="@layout/image_frame"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <include
+                android:id="@+id/tr_points"
+                layout="@layout/include_score_row" />
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="2dip" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="35dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@android:color/white"
+                        android:textSize="11dip" />
+                </LinearLayout>
+            </TableRow>
+            
+            <include
+                android:id="@+id/tr_cat1"
+                layout="@layout/include_score_row" />
+
+            <include
+                android:id="@+id/tr_cat2"
+                layout="@layout/include_score_row" />
+
+            <include
+                android:id="@+id/tr_cat3"
+                layout="@layout/include_score_row" />
+
+            <include
+                android:id="@+id/tr_cat4"
+                layout="@layout/include_score_row" />
+
+            <include
+                android:id="@+id/tr_cat5"
+                layout="@layout/include_score_row" />
+
+            <include
+                android:id="@+id/tr_cat6"
+                layout="@layout/include_score_row_catsurprise" />
+        </TableLayout>
+    </LinearLayout>
+
+   <View
+       	android:id="@+id/footer"
+       	android:layout_alignParentBottom="true"
+        android:layout_width="1dip"
+        android:layout_height="@dimen/activity_bottom_margin"
+        />
+</RelativeLayout>

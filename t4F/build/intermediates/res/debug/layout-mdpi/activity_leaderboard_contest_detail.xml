@@ -1,0 +1,282 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_leaderboard"
+    tools:context=".Activities.LeaderboardContestDetailActivity" >
+
+    <RelativeLayout
+        android:id="@+id/leaderboard_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/leaderboard_background_detail" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="62dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/contestTitleImageView"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:id="@+id/contestTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/contestDurationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LinearLayout01"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="92dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="2dp" >
+
+                    <ImageView
+                        android:id="@+id/contestEnterImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/leader_enter_contest_off" />
+
+                    <TextView
+                        android:id="@+id/contestFeeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:padding="0dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/contestEnterButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:onClick="enterContest" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="92dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="2dp" >
+
+                    <ImageView
+                        android:id="@+id/contestAwardImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/leader_awards" />
+
+                    <LinearLayout
+                        android:id="@+id/countLayout"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <com.igames2go.t4f.view.CustomTextView
+                                android:id="@+id/dayCountTextView"
+                                android:layout_width="35dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right|center_vertical"
+                                android:text="9999"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/red"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <com.igames2go.t4f.view.CustomTextView
+                                android:id="@+id/daysTextView"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="days"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@android:color/black"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <com.igames2go.t4f.view.CustomTextView
+                                android:id="@+id/hourCountTextView"
+                                android:layout_width="35dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right|center_vertical"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/red"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <com.igames2go.t4f.view.CustomTextView
+                                android:id="@+id/hoursTextView"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="hours"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@android:color/black"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <com.igames2go.t4f.view.CustomTextView
+                                android:id="@+id/minCountTextView"
+                                android:layout_width="35dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right|center_vertical"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/red"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <com.igames2go.t4f.view.CustomTextView
+                                android:id="@+id/minsTextView"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="mins"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@android:color/black"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.igames2go.t4f.view.CustomButton
+                        android:id="@+id/getAwardsButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="92dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="2dp" >
+
+                    <ImageView
+                        android:id="@+id/contestantImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/leader_contestants" />
+
+                    <TextView
+                        android:id="@+id/contestantTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="0dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:id="@+id/contestPostButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/leader_post"
+                    android:onClick="postContest" />
+
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/contestDescriptionWebView"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/icon_back_transparent" 
+        android:onClick="goBack"/>
+
+</RelativeLayout>
+<!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-mdpi/activity_leaderboard_contest_detail.xml -->

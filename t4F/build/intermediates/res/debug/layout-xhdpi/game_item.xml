@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="15dip"
+        android:layout_height="20dip" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/tv_turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/i_button_activegame_your_turn"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/textsize_small"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/ll_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/activegame_background_plain"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/tl_profile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:paddingTop="10dip" >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center" >
+
+                    <include
+                        android:id="@+id/frame1"
+                        layout="@layout/image_frame" />
+
+                    <View
+                        android:layout_width="10dip"
+                        android:layout_height="0dip" />
+
+                    <include
+                        android:id="@+id/frame2"
+                        layout="@layout/image_frame" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dip"
+                    android:gravity="center" >
+
+                    <include
+                        android:id="@+id/frame3"
+                        layout="@layout/image_frame" />
+
+                    <View
+                        android:layout_width="10dip"
+                        android:layout_height="0dip" />
+
+                    <include
+                        android:id="@+id/frame4"
+                        layout="@layout/image_frame" />
+                </TableRow>
+            </TableLayout>
+
+            <com.igames2go.t4f.view.CustomImageView
+                android:id="@+id/btn_play_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_weight=".5"
+                android:src="@drawable/i_button_activegame_play_now" />
+        </LinearLayout>
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/tv_gameinfo1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingTop="2dip"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_small"/>
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/tv_gameinfo2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingBottom="2dip"
+            android:paddingTop="2dip"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_small"/>
+    </LinearLayout>
+ <View
+        android:layout_width="15dip"
+        android:layout_height="20dip" />
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-xhdpi/game_item.xml -->

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="test1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/t4F/libs/test1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

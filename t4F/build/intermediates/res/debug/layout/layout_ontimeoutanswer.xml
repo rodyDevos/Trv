@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+	android:layout_height="fill_parent" android:background="@drawable/background_low_right"
+	android:orientation="vertical" android:layout_gravity="center">
+
+	<include layout="@layout/layout_resign_buttonpanel" />
+	<View android:layout_width="0dip" android:layout_height="0dip"
+		android:layout_weight="1" />
+	<include 
+		layout="@layout/layout_share_report_help_panel" />
+
+	<LinearLayout android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true" android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip" android:background="@drawable/round_rect"
+		android:orientation="vertical">
+
+		<include layout="@layout/question_panel" />
+
+		<com.igames2go.t4f.view.CustomTextView
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="20dip" android:gravity="center"
+			android:text="@string/oopsmsg" android:textColor="@color/blue_shade"
+			android:textSize="24sp" android:textStyle="bold" />
+
+		<com.igames2go.t4f.view.CustomTextView
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="2dip" android:gravity="center"
+			android:text="@string/outoftimemsg" android:textColor="@color/blue_shade"
+			android:textSize="18sp" android:textStyle="bold" />
+
+		<com.igames2go.t4f.view.CustomTextView android:textSize="@dimen/textsize_big"
+			android:id="@+id/ontimeoutnextplayer_tv" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:text="@string/outoftime_nextplayerturn" android:textColor="@color/blue_shade"
+			 android:textStyle="bold" />
+
+		<View android:layout_width="fill_parent" android:layout_height="1dip"
+			android:layout_margin="10dip" android:background="@android:color/darker_gray" />
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginBottom="20dip"
+			android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+			android:gravity="center" android:orientation="horizontal">
+
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:background="@drawable/icon_lifeline" />
+
+			<com.igames2go.t4f.view.CustomTextView android:textSize="@dimen/textsize_small"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip" android:text="@string/remember_lifeline"
+				 />
+		</LinearLayout>
+	</LinearLayout>
+	<View android:layout_width="0dip" android:layout_height="0dip"
+		android:layout_weight=".5" />
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout/layout_ontimeoutanswer.xml -->

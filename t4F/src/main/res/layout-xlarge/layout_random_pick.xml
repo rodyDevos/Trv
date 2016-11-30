@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_low_right"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_buttonpanel" />
+
+    <LinearLayout
+        android:layout_width="1dip"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <LinearLayout android:layout_margin="@dimen/padding_small" android:padding="@dimen/padding_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/randompick_background_1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/trans"
+            android:onClick="getRandom" android:layout_weight="1"
+            android:layout_alignParentTop="true" android:layout_above="@+id/ll_rand"/>
+
+        <LinearLayout android:id="@+id/ll_rand" android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dip" >
+
+            <include layout="@layout/include_profile_image_frame" />
+
+            <com.igames2go.t4f.view.CustomTextView
+                android:id="@+id/tv_rdm_pick_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_weight=".5"
+                android:lines="3"
+                android:maxLines="3" android:textSize="@dimen/textsize_mid"/>
+
+            <com.igames2go.t4f.view.CustomButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_small"
+                android:background="@drawable/icon_stats"
+                android:onClick="showStat" />
+
+            <com.igames2go.t4f.view.CustomButton
+                android:id="@+id/optionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_small"
+                android:background="@drawable/icon_additionsign"
+                android:onClick="onOptionButtonClick" />
+        </LinearLayout>
+
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1dip"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/alert_background"
+    android:orientation="vertical" >
+
+    <com.igames2go.t4f.view.CustomTextView
+        android:id="@+id/dialog_category_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:gravity="center"
+        android:text="To Show Category"
+        android:textColor="@android:color/white"
+        android:textSize="30dip"
+        android:textStyle="bold" />
+
+    <com.igames2go.t4f.view.CustomTextView
+        android:id="@+id/dialog_category_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:text="@string/gameoption_dialog_msg"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textsize_mid"
+        android:textStyle="bold" />
+
+    <com.igames2go.t4f.view.CustomButton
+        android:id="@+id/btn_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/icon_go" />
+
+    <com.igames2go.t4f.view.CustomButton
+        android:id="@+id/btn_selectagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/icon_selectagain" />
+
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-xhdpi/dialoglayout_categoryselect.xml -->

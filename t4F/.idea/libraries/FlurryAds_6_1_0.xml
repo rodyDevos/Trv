@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="FlurryAds-6.1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/FlurryAds-6.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

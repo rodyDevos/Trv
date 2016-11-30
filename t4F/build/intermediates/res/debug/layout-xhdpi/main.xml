@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<ScrollView
+	    android:id="@+id/scrollview"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:fillViewport="true"
+	    android:fadingEdge="none" >
+	
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+		
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_first_screen" />
+        
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="300dp"
+            android:layout_height="44dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="230dp"
+            android:background="@drawable/main_white_email"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="300dp"
+            android:layout_height="44dp"
+            android:layout_alignLeft="@+id/emailText"
+            android:layout_below="@+id/emailText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/main_white_password"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp" >
+
+            <ImageButton
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/main_login" />
+
+            <ImageButton
+                android:id="@+id/signupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/main_signup" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/forgotButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/main_forgot" />
+
+        <ImageButton
+            android:id="@+id/noLoginPlayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgotButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/main_play_without" />
+
+        <ImageButton
+            android:id="@+id/howToPlayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noLoginPlayButton"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/main_how" />
+
+        <ImageButton
+            android:id="@+id/helpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noLoginPlayButton"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/main_help" />
+    </RelativeLayout>
+
+</ScrollView>
+</RelativeLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-xhdpi/main.xml -->

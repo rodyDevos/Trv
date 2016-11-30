@@ -1,0 +1,36 @@
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_low_right" >
+
+    <Button
+        android:id="@+id/blockedFriendscreen_go_back"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/icon_back_transparent"
+        android:onClick="onBack" />
+
+	<View android:layout_width="0dip" android:layout_height="0dip"
+		android:layout_weight=".22" android:minHeight="@dimen/activity_bottom_margin" />
+    <LinearLayout android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="3dip"
+        android:background="@drawable/blocklist_background" 
+        >
+
+        <ListView
+            android:id="@+id/blockedfriends_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/black"
+            android:dividerHeight="0.5sp" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-tvdpi/layout_blockedfriends.xml -->

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.igames2go.t4f.view.CustomButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:layout_marginTop="20dip"
+     />
+
+<!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-xhdpi/inflatable_dialog_button.xml -->

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_small">15dip</dimen>
+    <dimen name="padding_mid">10dip</dimen>
+    <dimen name="profile_height">80dip</dimen>
+    <dimen name="profile_width">80dip</dimen>
+    <dimen name="horizontal_list_view_height">475dip</dimen>
+    <dimen name="textsize_big">25sp</dimen>
+    <dimen name="textsize_mid">21sp</dimen>
+    <dimen name="textsize_small">17sp</dimen>
+    <dimen name="textsize_very_small">13sp</dimen>
+    <dimen name="image_small">20dip</dimen>
+    <dimen name="category_width">300dip</dimen>
+    <dimen name="category_height">168dip</dimen>
+    <dimen name="playbyplay_bottom_margin">100dip</dimen>
+    <dimen name="pickfriend_margin">30dip</dimen>
+    <dimen name="activity_bottom_margin">100dip</dimen>
+    <dimen name="round_corner">16dip</dimen>
+    <dimen name="rect_width">3dip</dimen>
+    <dimen name="negative_activity_bottom_margin">-100dip</dimen>
+    <dimen name="index_height">40dip</dimen>
+    <dimen name="dialog_min_width">600dip</dimen>
+    <dimen name="textsize_question">22sp</dimen>
+    <dimen name="textsize_answer">18sp</dimen>
+    <dimen name="margin_game_option">70dip</dimen>
+</resources>

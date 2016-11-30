@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout android:layout_alignParentLeft="true"
+        android:id="@+id/left_chat_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_bubble_lefthand"
+        android:minWidth="100dip"
+        android:orientation="vertical"
+        android:paddingBottom="20dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="5dip"
+        android:layout_margin="5dip"
+        
+         >
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/tv_left_chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="@dimen/textsize_very_small" />
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/tv_left_chat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:maxLength="190"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/textsize_small" />
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/tv_left_chat_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxWidth="150dip"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="@dimen/textsize_very_small" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivMesgType" android:layout_toRightOf="@+id/left_chat_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_action"
+         >
+    </ImageView>
+
+    <LinearLayout android:layout_toRightOf="@+id/ivMesgType"
+        android:id="@+id/llOtherMesgType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="5dip"
+         >
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/tv_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColor="@android:color/secondary_text_dark"
+            android:textSize="@dimen/textsize_small" />
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/tv_chat_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="@dimen/textsize_mid" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_alignParentRight="true"
+        android:id="@+id/right_chat_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_bubble_righthand"
+        android:minWidth="100dip"
+        android:orientation="vertical"
+        android:paddingBottom="20dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="5dip"
+        android:layout_margin="5dip"
+        
+         >
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/tv_right_chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            
+            android:text="@string/chat_top_line_msg"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="@dimen/textsize_very_small" />
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/tv_right_chat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:maxLength="190"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="@dimen/textsize_small" />
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/tv_right_chat_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="@dimen/textsize_very_small" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-tvdpi/layout_chat_a_s.xml -->

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_main_container">
+    <FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <LinearLayout
+	        android:id="@+id/layput_container"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" />
+
+		<LinearLayout
+			android:id="@+id/banner_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|center_horizontal"
+			android:layout_marginTop="5dip"
+			android:orientation="vertical" >
+
+			<ImageView
+				android:layout_width="320dp"
+				android:layout_height="50dp"
+				android:scaleType="fitXY"
+				android:id="@+id/adImageView"
+				android:visibility="gone"/>
+		</LinearLayout>
+
+    </FrameLayout>
+</RelativeLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-tvdpi/ad_layout.xml -->

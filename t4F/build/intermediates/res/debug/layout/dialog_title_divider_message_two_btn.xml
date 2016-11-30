@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert_background"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:minWidth="@dimen/dialog_min_width"
+    android:padding="15dip" >
+
+    <!-- com.igames2go.t4f.view.CustomTextView -->
+
+    <include layout="@layout/include_title_divider" />
+
+    <com.igames2go.t4f.view.CustomTextView
+        android:id="@android:id/text2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:gravity="center_horizontal"
+        android:minLines="4"
+        android:text="@string/fb_ok_to_post"
+        android:textSize="@dimen/textsize_mid"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.igames2go.t4f.view.CustomButton
+            android:id="@android:id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dip"
+            
+             />
+
+        <com.igames2go.t4f.view.CustomButton
+            android:id="@android:id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/padding_small"
+            
+             />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout/dialog_title_divider_message_two_btn.xml -->

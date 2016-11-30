@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="top|center_horizontal"
+    android:layout_marginTop="@dimen/margin_game_option"
+    android:background="@drawable/category_selection"
+    android:onClick="onQuestionMarkClick"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <include
+                android:id="@+id/category_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/game_category" />
+
+            <include
+                android:id="@+id/category_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/game_category" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <include
+                android:id="@+id/category_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/game_category" />
+
+            <include
+                android:id="@+id/category_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/game_category" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <include
+                android:id="@+id/category_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/game_category" />
+
+            <include
+                android:id="@+id/category_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/game_category" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-mdpi/layout_gameoptions_apppart.xml -->

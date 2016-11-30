@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <com.igames2go.t4f.view.CustomButton
+        android:id="@+id/go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/icon_back_transparent"
+        android:onClick="onBack" />
+	<View android:layout_width="0dip"
+        android:layout_height="1dip" android:layout_weight="1"/>
+    
+
+    
+
+    
+
+    <com.igames2go.t4f.view.CustomButton
+        android:id="@+id/fb_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/icon_facebook_white"
+        android:onClick="onFBFriend" />
+
+    
+    
+    <com.igames2go.t4f.view.CustomButton
+        android:id="@+id/favorite_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/icon_favoritestar"
+        android:onClick="onFavFriend" />
+    
+    
+    
+    
+    <com.igames2go.t4f.view.CustomButton
+        android:id="@+id/search_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/icon_magnifyingglass"
+        android:onClick="onSearch" />
+    
+    
+    <com.igames2go.t4f.view.CustomButton
+        android:id="@+id/question_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/icon_questionmark"
+        android:onClick="onRandom" />
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout/layout_buttonpanel.xml -->

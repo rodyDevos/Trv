@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2010-present Facebook.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="green_shade">#00A44f</color>
+    <color name="blue_shade">#00ADEE</color>
+    <color name="navigation_background_color">#3B809E</color>
+    <color name="red">#ffff0000</color>
+    <color name="white">#ffffffff</color>
+    <color name="menu_background_color">#32394A</color>
+    <color name="divider_black_color">#242A05</color>
+    <color name="gray_color">#dfdfdf</color>
+    <color name="dark_gray_color">#AAAAAA</color>
+    <color name="menu_item_selected_color">#262C3A</color>
+    <color name="nav_bar_title_color">#000000</color>
+    <color name="nav_bar_background_color">#00000000</color>
+    <color name="screen_text_color">#000000</color>
+    	
+    <style name="Theme.D1NoTitleDim" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

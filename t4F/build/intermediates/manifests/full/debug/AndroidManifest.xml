@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.igames2go.t4f"
+    android:versionCode="19"
+    android:versionName="2.09 (2015-11-11)" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <permission
+        android:name="com.igames2go.t4f.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.igames2go.t4f.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="com.igames2go.t4f.Application.T4FApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.igames2go.t4f.Activities.LoginPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/app_name" />
+
+        <activity
+            android:name="com.igames2go.t4f.Activities.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.GameOptionsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.QuestionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.Answer2QuestionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.HomeScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+
+            <!--
+                 <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.FriendPickActivty"
+            android:screenOrientation="portrait" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.FacebookFriendsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.igames2go.t4f.Activities.MeetTheChallenge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.igames2go.t4f.Activities.FavoriteFriendsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.FindAFriendActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.BlockedFriendsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.RandomPickActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.ScoreboardActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.PlayerStatActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.PlaybyPlayActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.HelpActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.ReportActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.ChatActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.SettingsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.NotificationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.LoginForDeviceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.flurry.android.FlurryFullscreenTakeoverActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode" />
+        <activity android:name="com.igames2go.t4f.Activities.AddActivity" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.igames2go.t4f.Activities.DialogActivity"
+            android:theme="@style/Theme.D1NoTitleDim" />
+        <activity
+            android:name="com.igames2go.t4f.Activities.GameAlertDialogActivity"
+            android:theme="@style/Theme.D1NoTitleDim" />
+        <activity
+            android:name="com.learn2crack.ChangePassword"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.learn2crack.Login"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.learn2crack.Profile"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.learn2crack.Registered"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.learn2crack.PasswordReset"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.igames2go.t4f.Activities.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.igames2go.t4f" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.igames2go.t4f.Activities.GcmIntentService" />
+
+        <activity
+            android:name="com.learn2crack.ChangeName"
+            android:label="@string/title_activity_change_name" />
+        <activity
+            android:name="com.igames2go.t4f.Activities.AboutActivity"
+            android:label="@string/title_activity_about" />
+        <activity
+            android:name="com.igames2go.t4f.Activities.SupportActivity"
+            android:label="@string/title_activity_support" />
+        <activity
+            android:name="com.igames2go.t4f.Activities.TermActivity"
+            android:label="@string/title_activity_term" />
+        <activity
+            android:name="com.igames2go.t4f.Activities.LeaderboardRankingActivity"
+            android:label="@string/title_activity_leaderboard_ranking" />
+        <activity
+            android:name="com.igames2go.t4f.Activities.LeaderboardContestActivity"
+            android:label="@string/title_activity_leaderboard_contest" />
+        <activity
+            android:name="com.igames2go.t4f.Activities.LeaderboardContestDetailActivity"
+            android:label="@string/title_activity_leaderboard_contest_detail" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider370304769678189"
+            android:exported="true" />
+
+        <activity
+            android:name="com.igames2go.t4f.Activities.SelectCategory.SelectCategoryActivity"
+            android:label="@string/title_activity_select_category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.igames2go.t4f.Activities.SelectCategory.SelectCategoryDetailsActivity"
+            android:screenOrientation="portrait" />
+        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+    </application>
+
+</manifest>

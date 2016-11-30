@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.igames2go.t4f.Activities.SelectCategory.SelectCategoryActivity"
+    android:background="@drawable/background_no_logo">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <com.igames2go.t4f.view.CustomButton
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="Cancel"
+            android:id="@+id/btnCancel"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:onClick="cancel"/>
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Select Categories"
+            android:id="@+id/txtTitle"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/btnCancel"
+            android:layout_toLeftOf="@+id/btnNext"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <com.igames2go.t4f.view.CustomButton
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="Next"
+            android:id="@+id/btnNext"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:onClick="next"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/selCatsLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/headerLayout"
+        android:background="@color/white"
+        android:padding="5dp">
+        <com.igames2go.t4f.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Selected New Game Categories"
+            android:id="@+id/txtSelCategoryTitle"
+            android:textColor="@android:color/black"
+            android:gravity="left"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:id="@+id/selCatListLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/txtSelCategoryTitle"
+            android:layout_marginTop="10dp"
+            android:gravity="left">
+
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/categoryListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/selCatsLayout"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:background="@android:color/white"
+        android:cacheColorHint="@android:color/transparent" >
+
+    </ListView>
+</RelativeLayout>
+<!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout/activity_select_category.xml -->

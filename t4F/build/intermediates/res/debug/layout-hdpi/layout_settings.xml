@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_settings" >
+	<RelativeLayout
+	    android:id="@+id/headerLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="52dp" >
+
+		<com.igames2go.t4f.view.CustomTextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:text="Settings"
+		    android:textSize="20sp"
+		    android:textStyle="bold"
+		    android:textColor="@color/nav_bar_title_color"/>
+		<ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_back_transparent"
+            android:onClick="cancel" />
+	    
+	</RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:orientation="vertical" >
+		<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/white_round_rect"
+	        android:orientation="vertical"
+	        android:layout_marginTop="130dip"
+	        android:padding="10dp"
+	        >
+        <!-- <com.igames2go.t4f.view.CustomTextView -->
+        
+			<LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="35dp"
+		        android:orientation="horizontal"
+		        android:gravity="center_vertical"
+		        android:paddingLeft="10dp"
+	        	android:paddingRight="10dp"
+		        >
+		        <com.igames2go.t4f.view.CustomTextView
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:text="Sound"
+		            android:textColor="@android:color/black" />
+		
+		        <CheckBox
+		            android:id="@+id/cb_sound"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="0dip" />
+	        </LinearLayout>
+
+			<ImageView
+			    android:id="@+id/imageView1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="1dp"
+			    android:background="@color/gray_color"
+			    android:layout_marginTop="5dp"
+			    android:layout_marginBottom="5dp" />
+
+	        <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="35dp"
+		        android:onClick="openNotification"
+		        android:orientation="horizontal"
+		        android:gravity="center_vertical"
+		        android:paddingLeft="10dp"
+	        	android:paddingRight="10dp"
+		        >
+		        <com.igames2go.t4f.view.CustomTextView
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:text="Notifications"
+		            android:textColor="@android:color/black"
+		            android:textStyle="bold" />
+
+		        <ImageView
+		            android:id="@+id/imageView2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/icon_next" />
+
+		    </LinearLayout>
+		</LinearLayout>
+    </LinearLayout>
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-hdpi/layout_settings.xml -->

@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/btn_optionA_onwronganswerscreen_wrongans"
+        android:layout_width="300dip"
+        android:layout_height="35dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/button_a"
+        android:maxLines="1"
+        android:text="Option A"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_optionB_onwronganswerscreen_wrongans"
+        android:layout_width="300dip"
+        android:layout_height="35dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/button_b"
+        android:maxLines="1"
+        android:text="Option B"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_optionC_onwronganswerscreen_wrongans"
+        android:layout_width="300dip"
+        android:layout_height="35dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/button_c"
+        android:maxLines="1"
+        android:text="Option C"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_optionD_onwronganswerscreen_wrongans"
+        android:layout_width="300dip"
+        android:layout_height="35dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/button_d"
+        android:maxLines="1"
+        android:text="Option D"
+        android:visibility="gone" />
+
+</LinearLayout>

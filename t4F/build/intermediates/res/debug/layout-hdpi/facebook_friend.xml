@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_low_right"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_buttonpanel" />
+
+    <View
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_weight=".22" android:minHeight="@dimen/activity_bottom_margin" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="3dip"
+        android:layout_weight="1"
+        android:background="@drawable/facebookfriends_background"
+         >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            >
+            <ListView
+                android:id="@+id/fbfriends_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@android:color/black"
+                android:dividerHeight="0.5sp" >
+            </ListView>
+
+            <com.igames2go.t4f.view.SideBarView
+                android:id="@+id/letterSideBarView"
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-hdpi/facebook_friend.xml -->

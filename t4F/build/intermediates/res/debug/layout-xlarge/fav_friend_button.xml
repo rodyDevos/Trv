@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:onClick="favFriendClick" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/icon"
+        android:orientation="vertical" android:paddingRight="20dip" >
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@android:id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_favourite_friend"
+            android:textSize="@dimen/textsize_mid"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@android:id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_fav_frnd_desc"
+            android:textSize="@dimen/textsize_small"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/icon_favoritestar" />
+
+</RelativeLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-xlarge/fav_friend_button.xml -->

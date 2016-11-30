@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="menu_item_icons">
+        <item>@string/menu_icon_game</item>
+        <item>@string/menu_icon_refresh</item>
+        <item>@string/menu_icon_invite</item>
+        <item>@string/menu_icon_fb_login</item>
+        <item>@string/menu_icon_statistics</item>
+        <item>@string/menu_icon_leaderboard</item>
+        <item>@string/menu_icon_store</item>
+        <item>@string/menu_icon_profile</item>
+        <item>@string/menu_icon_setting</item>
+        <item>@string/menu_icon_help</item>
+        <item>@string/menu_icon_support</item>
+        <item>@string/menu_icon_rate</item>
+        <item>@string/menu_icon_buy_ad</item>
+        <item>@string/menu_icon_about</item>
+        <item>@string/menu_icon_logout</item>
+    </string-array>
+    <string-array name="menu_item_titles">
+        <item>@string/menu_game</item>
+        <item>@string/menu_refresh</item>
+        <item>@string/menu_invite</item>
+        <item>@string/menu_fb_login</item>
+        <item>@string/menu_statistics</item>
+        <item>@string/menu_leaderboard</item>
+        <item>@string/menu_store</item>
+        <item>@string/menu_profile</item>
+        <item>@string/menu_setting</item>
+        <item>@string/menu_help</item>
+        <item>@string/menu_support</item>
+        <item>@string/rate_title2</item>
+        <item>@string/buy_title</item>
+        <item>@string/menu_about</item>
+        <item>@string/menu_logout</item>
+    </string-array>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <color name="blue_shade">#00ADEE</color>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.facebook.android/facebook/4.6.0/res/values/values.xml -->
+    <eat-comment/>
+    <color name="com_facebook_blue">#3B5998</color>
+    <color name="com_facebook_button_background_color">#415dae</color>
+    <color name="com_facebook_button_background_color_disabled">#bdc1c9</color>
+    <color name="com_facebook_button_background_color_pressed">#2f477a</color>
+    <color name="com_facebook_button_like_background_color_selected">#7c8fc8</color>
+    <color name="com_facebook_button_login_silver_background_color">#f4f6f8</color>
+    <color name="com_facebook_button_login_silver_background_color_pressed">#e9eaf0</color>
+    <color name="com_facebook_button_send_background_color">#0084ff</color>
+    <color name="com_facebook_button_send_background_color_pressed">#006fff</color>
+    <color name="com_facebook_likeboxcountview_border_color">#6a7180</color>
+    <color name="com_facebook_likeboxcountview_text_color">#6a7180</color>
+    <color name="com_facebook_likeview_text_color">#6a7180</color>
+    <color name="com_facebook_share_button_text_color">#FFFFFF</color>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values/common_colors.xml -->
+    <eat-comment/>
+    <color name="common_action_bar_splitter">#d2d2d2</color>
+    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_default_background">#FFDD4B39</color>
+    <color name="common_signin_btn_light_text_default">#FF737373</color>
+    <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_light_text_focused">#FF737373</color>
+    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <color name="dark_gray_color">#AAAAAA</color>
+    <color name="divider_black_color">#242A05</color>
+    <color name="gray_color">#dfdfdf</color>
+    <color name="green_shade">#00A44f</color>
+    <color name="menu_background_color">#32394A</color>
+    <color name="menu_item_selected_color">#262C3A</color>
+    <color name="nav_bar_background_color">#00000000</color>
+    <color name="nav_bar_title_color">#000000</color>
+    <color name="navigation_background_color">#3B809E</color>
+    <color name="red">#ffff0000</color>
+    <color name="screen_text_color">#000000</color>
+    <color name="white">#ffffffff</color>
+    <declare-styleable name="AdsAttrs"><attr format="string" name="adSize"/><attr format="string" name="adSizes"/><attr format="string" name="adUnitId"/></declare-styleable>
+    <declare-styleable name="LoadingImageView"><attr format="enum" name="imageAspectRatioAdjust"><enum name="none" value="0"/><enum name="adjust_width" value="1"/><enum name="adjust_height" value="2"/></attr><attr format="float" name="imageAspectRatio"/><attr format="boolean" name="circleCrop"/></declare-styleable>
+    <declare-styleable name="com_facebook_like_view"><attr format="color" name="com_facebook_foreground_color"/><attr format="string" name="com_facebook_object_id"/><attr name="com_facebook_object_type"><enum name="unknown" value="0"/><enum name="open_graph" value="1"/><enum name="page" value="2"/></attr><attr name="com_facebook_style"><enum name="standard" value="0"/><enum name="button" value="1"/><enum name="box_count" value="2"/></attr><attr name="com_facebook_auxiliary_view_position"><enum name="bottom" value="0"/><enum name="inline" value="1"/><enum name="top" value="2"/></attr><attr name="com_facebook_horizontal_alignment"><enum name="center" value="0"/><enum name="left" value="1"/><enum name="right" value="2"/></attr></declare-styleable>
+    <declare-styleable name="com_facebook_login_view"><attr format="boolean" name="com_facebook_confirm_logout"/><attr format="string" name="com_facebook_login_text"/><attr format="string" name="com_facebook_logout_text"/><attr name="com_facebook_tooltip_mode"><enum name="automatic" value="0"/><enum name="display_always" value="1"/><enum name="never_display" value="2"/></attr></declare-styleable>
+    <declare-styleable name="com_facebook_profile_picture_view"><attr name="com_facebook_preset_size"><enum name="small" value="-2"/><enum name="normal" value="-3"/><enum name="large" value="-4"/></attr><attr format="boolean" name="com_facebook_is_cropped"/></declare-styleable>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_bottom_margin">50dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="category_height">77dip</dimen>
+    <dimen name="category_width">138dip</dimen>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.facebook.android/facebook/4.6.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="com_facebook_likeboxcountview_border_radius">3dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_border_width">1dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_caret_height">3dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_caret_width">6dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_text_padding">6dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_text_size">11.0sp</dimen>
+    <dimen name="com_facebook_likeview_edge_padding">2dp</dimen>
+    <dimen name="com_facebook_likeview_internal_padding">6dp</dimen>
+    <dimen name="com_facebook_likeview_text_size">11.0sp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_large">180dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_normal">100dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_small">50dp</dimen>
+    <dimen name="com_facebook_share_button_compound_drawable_padding">12dp</dimen>
+    <dimen name="com_facebook_share_button_padding_bottom">12dp</dimen>
+    <dimen name="com_facebook_share_button_padding_left">12dp</dimen>
+    <dimen name="com_facebook_share_button_padding_right">16dp</dimen>
+    <dimen name="com_facebook_share_button_padding_top">12dp</dimen>
+    <dimen name="com_facebook_share_button_text_size">16.0sp</dimen>
+    <dimen name="com_facebook_tooltip_horizontal_padding">10dp</dimen>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="dialog_min_width">280dip</dimen>
+    <dimen name="horizontal_list_view_height">250dip</dimen>
+    <dimen name="image_small">15dip</dimen>
+    <dimen name="index_height">20dip</dimen>
+    <dimen name="margin_game_option">30dip</dimen>
+    <dimen name="min_row_height">30dip</dimen>
+    <dimen name="negative_activity_bottom_margin">-50dip</dimen>
+    <dimen name="padding_mid">10dip</dimen>
+    <dimen name="padding_small">5dip</dimen>
+    <dimen name="pickfriend_margin">10dip</dimen>
+    <dimen name="playbyplay_bottom_margin">50dip</dimen>
+    <dimen name="profile_height">40dip</dimen>
+    <dimen name="profile_width">40dip</dimen>
+    <dimen name="rect_width">1dip</dimen>
+    <dimen name="round_corner">8dip</dimen>
+    <dimen name="textsize_big">20sp</dimen>
+    <dimen name="textsize_mid">15sp</dimen>
+    <dimen name="textsize_question">17sp</dimen>
+    <dimen name="textsize_small">11sp</dimen>
+    <dimen name="textsize_very_small">9sp</dimen>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values/version.xml -->
+    <eat-comment/>
+    <integer name="google_play_services_version">8115000</integer>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/values/integer.xml -->
+    <eat-comment/>
+    <integer name="weight">10</integer>
+    <integer name="zoom">150</integer>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/res/values/admob_strings.xml -->
+    <eat-comment/>
+    <string name="accept">Accept</string>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_block">block</string>
+    <string name="action_favorite">favorite</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_unblock">unblock</string>
+    <string name="action_unfavorite">unfavorite</string>
+    <string name="ad">Advertisement</string>
+    <string name="ad_enabled">1</string>
+    <string name="addtogame">Add to game</string>
+    <string name="app_id">370304769678189</string>
+    <string name="app_name">Trivia 4 Friends Free</string>
+    <string name="app_name2">Trivia 4 Free</string>
+    <string name="appid">com.igames2go.t4f</string>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values/auth_strings.xml -->
+    <eat-comment/>
+    <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
+    <string name="auth_google_play_services_client_google_display_name">Google</string>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="base_url">http://www.trivia4friends.com/t4fapi</string>
+    <string name="betterchoicemsg">A better choice would have been…</string>
+    <string name="blocked">blocked</string>
+    <string name="blockedfriendsemptylist">There are no blocked Players</string>
+    <string name="buy_title">Buy Ad-free version</string>
+    <string name="buy_url">https://play.google.com/store/apps/details?id=com.igames2go.t4f</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancel_dialog_msg_onnewgame">Are you sure you want to cancel adding a new game?</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="chat_top_line_msg">You said:</string>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.facebook.android/facebook/4.6.0/res/values/values.xml -->
+    <eat-comment/>
+    <string name="com_facebook_image_download_unknown_error">Unexpected error while downloading an image.</string>
+    <string name="com_facebook_internet_permission_error_message">WebView login requires INTERNET permission</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
+    <string name="com_facebook_like_button_liked">Liked</string>
+    <string name="com_facebook_like_button_not_liked">Like</string>
+    <string name="com_facebook_loading">Loading...</string>
+    <string name="com_facebook_loginview_cancel_action">Cancel</string>
+    <string name="com_facebook_loginview_log_in_button">Log in</string>
+    <string name="com_facebook_loginview_log_in_button_long">Log in with Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Log out</string>
+    <string name="com_facebook_loginview_log_out_button">Log out</string>
+    <string name="com_facebook_loginview_logged_in_as">Logged in as: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Logged in using Facebook</string>
+    <string name="com_facebook_send_button_text">Send</string>
+    <string name="com_facebook_share_button_text">Share</string>
+    <string name="com_facebook_tooltip_default">New! You\'re in control - choose what info you want to share with apps.</string>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values/common_strings.xml -->
+    <eat-comment/>
+    <string name="common_android_wear_notification_needs_update_text"><ns1:g id="app_name">%1$s</ns1:g> requires an update to the Android Wear app.</string>
+    <string name="common_android_wear_update_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run unless you update the Android Wear app.</string>
+    <string msgid="6006316683626838685" name="common_android_wear_update_title">Update Android Wear</string>
+    <string name="common_google_play_services_api_unavailable_text"><ns1:g id="app_name">%1$s</ns1:g> requires one or more Google Play services that are not currently available. Please contact the developer for assistance.</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Requested by <ns1:g id="app_name">%1$s</ns1:g></string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Get Google Play services</string>
+    <string msgid="2122112764540849864" name="common_google_play_services_install_text_phone"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are missing from your phone.</string>
+    <string msgid="7351599665250191022" name="common_google_play_services_install_text_tablet"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are missing from your tablet.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_needs_enabling_title">An application requires Google Play services to be enabled.</string>
+    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
+    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_notification_needs_update_title">An application requires an update for Google Play services.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_sign_in_failed_text">Error signing in the specified account. Please choose a different account.</string>
+    <string name="common_google_play_services_sign_in_failed_title">Sign in failed</string>
+    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
+    <string name="common_google_play_services_unsupported_text"><ns1:g id="app_name">%1$s</ns1:g> relies on Google Play services, which is not supported by your device. Contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run unless you update Google Play services.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are currently updating.</string>
+    <string name="common_google_play_services_updating_title">Google Play services are updating</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/res/values/base_strings.xml -->
+    <eat-comment/>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/res/values/admob_strings.xml -->
+    <eat-comment/>
+    <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
+    <string name="create_calendar_title">Create calendar event</string>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="culture">Culture</string>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/res/values/admob_strings.xml -->
+    <eat-comment/>
+    <string name="decline">Decline</string>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="deletefromgame">Delete from game</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="error">Error</string>
+    <string name="exception">Exception: %1$s</string>
+    <string name="favorites">favorites</string>
+    <string name="fb_alert_body">Even though you log in using a Facebook account, nothing will ever be posted to your Facebook without your expressed permission.</string>
+    <string name="fb_alert_friends">Facebook Friends</string>
+    <string name="fb_alert_friends_body">You are not logged in via Facebook so you cannot choose Facebook Friends.</string>
+    <string name="fb_alert_title">Facebook Login</string>
+    <string name="fb_apprequest_message">Trivia 4 Friends is an iPhone or Android mobile game app</string>
+    <string name="fb_complete_post">Complete! Check your Facebook wall to see this post.</string>
+    <string name="fb_invite_friends_message">If you enjoy using this app, would you mind taking a moment to invite a few friends that you think will also like it?</string>
+    <string name="fb_not_logged_in">You are not logged into Facebook. Would you like to login now so you can share?</string>
+    <string name="fb_ok_to_post">Selecting OK will allow posting to Facebook that you were asked a question while playing Trivia 4 Friends</string>
+    <string name="fb_ok_to_post_contest">Selecting OK will allow posting info about this contest to Facebook.</string>
+    <string name="fb_post_caption_android">Access Android app</string>
+    <string name="fb_post_contest_message">Check out this contest</string>
+    <string name="fb_post_description_android">Available for both iPhone and Android</string>
+    <string name="fb_post_link_android">https://play.google.com/store/apps/details?id=com.igames2go.t4f</string>
+    <string name="fb_post_message">I just played my turn and was asked:</string>
+    <string name="fb_post_name_android">See Android app</string>
+    <string name="fb_post_picture">http://www.trivia4friends.com/t4fapi/images/icon_114_t4f.png</string>
+    <string name="fb_share_url">http://www.trivia4friends.com</string>
+    <string name="flurry_ad_space1">Test Space</string>
+    <string name="flurry_appid">5ZN58BWPVZ9W25GHMVYD</string>
+    <string name="font_regular">HoboStd</string>
+    <string name="game_url">http://www.trivia4friends.com/t4fapi/gamev2dev.php</string>
+    <string name="gameoption_dialog_msg">Ready? Lets do this…</string>
+    <string name="geography">Geography</string>
+    <string name="goodjobmsg">Yep! Good Job!</string>
+    <string name="hello_user">Hello %1$s!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="invite_dialog_msg">Invite to App</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="label_choose_next_opponent_">Choose next opponent…</string>
+    <string name="label_fav_frnd_desc"><![CDATA[Create and choose from a list of Friends to play often]]></string>
+    <string name="label_favourite_friend">Favorite Friend</string>
+    <string name="label_fb_friend">Facebook Friend</string>
+    <string name="label_fb_frnd_desc"><![CDATA[Find someone from your list of Facebook Friends to play a game]]></string>
+    <string name="label_find_a_friend">Find a Friend</string>
+    <string name="label_find_a_frnd_desc"><![CDATA[Use the search to locate another Trivia 4 Friends player]]></string>
+    <string name="label_first_opnt">Choose first opponent…</string>
+    <string name="label_rdm_pick">Random Pick</string>
+    <string name="label_rdm_pick_desc"><![CDATA[Let Trivia 4 Friends locate an opponent for you]]></string>
+    <string name="lifeline_seconds">20</string>
+    <string name="loadblockedfrnds">Loading Blocked</string>
+    <string name="loadfavoritefrnds">Loading Favorite</string>
+    <string name="loading">Loading…If this never goes away, your network connection may have dropped.</string>
+    <string name="loading_facebook_friends">Loading Facebook Friends</string>
+    <string name="loading_msgs">Loading Messages</string>
+    <string name="loading_ques">Loading Question</string>
+    <string name="loading_scoreborad">Loading Scoreboard</string>
+    <string name="loading_seconds">60</string>
+    <string name="loading_settings_notification">Loading Settings</string>
+    <string name="loading_stats">Loading Statistics</string>
+    <string name="loadinggames">Checking for updated games…If this never goes away, your network connection may have dropped.</string>
+    <string name="loadrandomfrnds">Loading Random</string>
+    <string name="logins_for_friends_label1">Players who get notifications from this device may have notifications turned on or off. Or Long press the item to delete from this device’s list.</string>
+    <string name="logins_for_friends_label2">A player is added to this list whenever they login to play Trivia 4 Friends on this device.</string>
+    <string name="logout_messsage">Are you sure you want to logout?</string>
+    <string name="logout_title">Logout</string>
+    <string name="menu_about">About</string>
+    <string name="menu_buy_ad">Buy Ad-free</string>
+    <string name="menu_fb_login">Login/Logout Facebook</string>
+    <string name="menu_game">Games</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_icon_about">menu_about</string>
+    <string name="menu_icon_buy_ad">menu_buy_ad</string>
+    <string name="menu_icon_fb_login">menu_fb_home_login</string>
+    <string name="menu_icon_game">menu_games</string>
+    <string name="menu_icon_help">menu_help</string>
+    <string name="menu_icon_invite">menu_invite</string>
+    <string name="menu_icon_leaderboard">menu_leaderboard</string>
+    <string name="menu_icon_logout">menu_logout</string>
+    <string name="menu_icon_profile">menu_profile</string>
+    <string name="menu_icon_rate">menu_rate</string>
+    <string name="menu_icon_refresh">menu_refresh</string>
+    <string name="menu_icon_setting">menu_settings</string>
+    <string name="menu_icon_statistics">menu_statistics</string>
+    <string name="menu_icon_store">menu_store</string>
+    <string name="menu_icon_support">menu_support</string>
+    <string name="menu_invite">Invite Friends</string>
+    <string name="menu_leaderboard">Leaderboard</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_rate">Rate app</string>
+    <string name="menu_refresh">Refresh Games</string>
+    <string name="menu_setting">Settings</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_statistics">Player Statistics</string>
+    <string name="menu_store">Store</string>
+    <string name="menu_support">Support</string>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.facebook.android/facebook/4.6.0/res/values/values.xml -->
+    <eat-comment/>
+    <string name="messenger_send_button_text">Send</string>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="nav_bar_title_font">HoboStd</string>
+    <string name="no_friends_selected">&lt;No friends selected></string>
+    <string name="no_logged_quit_message">Quit playing by not logging in and present options to login or not?</string>
+    <string name="no_login_invite_message">You are not logged in via Facebook so you cannot invite Facebook friends</string>
+    <string name="no_login_player_statistics_message">You are not logged in so you cannot see Player Statistics. To log in, tap menu at top left, then \'Back to Login Options\'</string>
+    <string name="no_login_select_picture_message">You are not logged in via Facebook so you cannot choose Facebook picture</string>
+    <string name="no_login_share_message">You are not logged in via Facebook so you cannot share a question on Facebook</string>
+    <string name="no_place_selected">&lt;No place selected></string>
+    <string name="nopemsg">Nope!</string>
+    <string name="ok">OK</string>
+    <string name="oopsmsg">Oops!</string>
+    <string name="os">AND</string>
+    <string name="outoftime_nextplayerturn">#NAME#\'s turn…</string>
+    <string name="outoftimemsg">Out of time</string>
+    <string name="passedcategorymsg">You have passed this category to the next player. #NAME#</string>
+    <string name="passedcategorymsg_wronganswerscreen">The next Player. playername . now gets to choose their category…</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="pick_seattle_place">Pick a Seattle Place</string>
+    <string name="random">random</string>
+    <string name="rate_message2">To encourage others to play, please go to the app store to give a positive review</string>
+    <string name="rate_title1">Did you like the game?</string>
+    <string name="rate_title2">Rate App?</string>
+    <string name="rate_url">https://play.google.com/store/apps/details?id=com.igames2go.t4f</string>
+    <string name="remember_lifeline">Remember: lifelines add time to your clock! Just be careful, you have 3 per game.</string>
+    <string name="resign_dialog_msg">Are you sure you wish to resign this game?</string>
+    <string name="saving_settings_notification">Saving Settings</string>
+    <string name="science">Science</string>
+    <string name="searchdefaulttext">Partial/Full Facebook name</string>
+    <string name="searching">Searching</string>
+    <string name="searchresultempty">There are no search results</string>
+    <string name="searchresultemptymsg">Please try entering another name</string>
+    <string name="searchstringempty">You must enter at least one character</string>
+    <string name="sending_msg">Sending Message</string>
+    <string name="setblocked">Set as Blocked</string>
+    <string name="setfavorite">Set as Favorite</string>
+    <string name="setplayerfunc">f=setPlayer</string>
+    <string name="sports">Sports</string>
+    <string name="startinggame">Starting Game</string>
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/res/values/admob_strings.xml -->
+    <eat-comment/>
+    <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
+    <string name="store_picture_title">Save image</string>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="submittinganswer">Submitting Answer</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="surprise">Surprise</string>
+    <string name="timeout_error_message">Please try again later</string>
+    <string name="timeout_error_title">Operation timed out</string>
+    <string name="timer_seconds">20</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_change_name">ChangeName</string>
+    <string name="title_activity_leaderboard_contest">LeaderboardContestActivity</string>
+    <string name="title_activity_leaderboard_contest_detail">LeaderboardContestDetailActivity</string>
+    <string name="title_activity_leaderboard_ranking">LeaderboardRankingActivity</string>
+    <string name="title_activity_select_category">SelectCategoryActivity</string>
+    <string name="title_activity_support">SupportActivity</string>
+    <string name="title_activity_term">TermActivity</string>
+    <string name="type">drawable</string>
+    <string name="unblock">Unblock</string>
+    <string name="unfavorite">Unfavorite</string>
+    <string name="upload_url">http://www.trivia4friends.com/t4fapi/login/upload.php</string>
+    <string name="url_category">http://www.trivia4friends.com/t4fapi/images/categoryv2/</string>
+    <string name="you_picked">You picked:</string>
+    <string name="your_friends_have_been_invited">Your friends have been invited</string>
+    <string name="youselected">You Selected</string>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.facebook.android/facebook/4.6.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="MessengerButton">
+    <item name="android:clickable">true</item>
+  </style>
+    <style name="MessengerButton.Blue">
+    <item name="android:background">@drawable/messenger_button_blue_bg_selector</item>
+  </style>
+    <style name="MessengerButton.Blue.Large">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">44dp</item>
+    <item name="android:layout_marginLeft">16dp</item>
+    <item name="android:layout_marginRight">16dp</item>
+  </style>
+    <style name="MessengerButton.Blue.Small">
+    <item name="android:layout_width">158dp</item>
+    <item name="android:layout_height">36dp</item>
+  </style>
+    <style name="MessengerButton.White">
+    <item name="android:background">@drawable/messenger_button_white_bg_selector</item>
+  </style>
+    <style name="MessengerButton.White.Large">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">44dp</item>
+    <item name="android:layout_marginLeft">16dp</item>
+    <item name="android:layout_marginRight">16dp</item>
+  </style>
+    <style name="MessengerButton.White.Small">
+    <item name="android:layout_width">158dp</item>
+    <item name="android:layout_height">36dp</item>
+  </style>
+    <style name="MessengerButtonText">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:drawablePadding">4dp</item>
+    <item name="android:gravity">center</item>
+    <!--suppress NewApi -->
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+    <style name="MessengerButtonText.Blue">
+    <item name="android:textColor">#ffffff</item>
+  </style>
+    <style name="MessengerButtonText.Blue.Large">
+    <item name="android:drawableLeft">@drawable/messenger_bubble_large_white</item>
+  </style>
+    <style name="MessengerButtonText.Blue.Small">
+    <item name="android:drawableLeft">@drawable/messenger_bubble_small_white</item>
+  </style>
+    <style name="MessengerButtonText.White">
+    <item name="android:textColor">#0084ff</item>
+  </style>
+    <style name="MessengerButtonText.White.Large">
+    <item name="android:drawableLeft">@drawable/messenger_bubble_large_blue</item>
+  </style>
+    <style name="MessengerButtonText.White.Small">
+    <item name="android:drawableLeft">@drawable/messenger_bubble_small_blue</item>
+  </style>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Theme.D1NoTitleDim" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/res/values/admob_iap_style.xml -->
+    <eat-comment/>
+    <style name="Theme.IAPTheme" parent="android:Theme">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+    <!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.facebook.android/facebook/4.6.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="com_facebook_button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/com_facebook_button_background</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14.0dp</item>
+    </style>
+    <style name="com_facebook_button_like" parent="com_facebook_button">
+        <item name="android:background">@drawable/com_facebook_button_like_background</item>
+    </style>
+    <style name="com_facebook_button_send" parent="com_facebook_button">
+        <item name="android:background">@drawable/com_facebook_button_send_background</item>
+        <item name="android:drawableLeft">@drawable/com_facebook_button_send_icon</item>
+        <item name="android:text">@string/com_facebook_send_button_text</item>
+    </style>
+    <style name="com_facebook_button_share" parent="com_facebook_button">
+        <item name="android:drawableLeft">@drawable/com_facebook_button_icon</item>
+        <item name="android:text">@string/com_facebook_share_button_text</item>
+    </style>
+    <style name="com_facebook_loginview_default_style" parent="com_facebook_button">
+        <item name="android:drawableLeft">@drawable/com_facebook_button_icon</item>
+    </style>
+    <style name="com_facebook_loginview_silver_style" parent="com_facebook_loginview_default_style">
+        <item name="android:background">@drawable/com_facebook_button_login_silver_background</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:textColor">#4b5164</item>
+    </style>
+    <style name="tooltip_bubble_text">
+	    <item name="android:textColor">@android:color/white</item>
+	    <item name="android:gravity">left</item>
+	    <item name="android:textSize">12sp</item>
+	    <item name="android:shadowDy">-1</item>
+	    <item name="android:shadowRadius">0.25</item>
+	    <item name="android:shadowColor">#40000000</item>
+    </style>
+</resources>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_notifications"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+         >
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Notifications"
+            android:textColor="@color/nav_bar_title_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_back_transparent"
+            android:onClick="save" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="40dip"
+            android:background="@drawable/white_round_rect"
+            android:orientation="horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" >
+
+            <!-- <com.igames2go.t4f.view.CustomTextView -->
+
+            <com.igames2go.t4f.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Notifications"
+                android:textColor="@android:color/black" />
+
+            <CheckBox
+                android:id="@+id/cb_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_typesofnotification"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.igames2go.t4f.view.CustomTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="20dip"
+                android:paddingTop="20dip"
+                android:text="Type of Notifications"
+                android:textColor="@color/screen_text_color" />
+			
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="2dip"
+                android:background="@drawable/white_round_rect"
+                android:orientation="vertical"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip" >
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal"
+	                android:paddingTop="5dp"
+	                android:paddingBottom="5dp"
+	                >
+	
+	                <!-- <com.igames2go.t4f.view.CustomTextView -->
+	
+	                <com.igames2go.t4f.view.CustomTextView
+	                    android:layout_width="0dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_weight="1"
+	                    android:text="Game Start or End"
+	                    android:textColor="@android:color/black" />
+	
+	                <CheckBox
+	                    android:id="@+id/cb_game"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="0dip" />
+	            </LinearLayout>
+				<ImageView
+				    android:id="@+id/imageView1"
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="@color/gray_color" />
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" 
+	                android:paddingTop="5dp"
+	                android:paddingBottom="5dp">
+	
+	                <!-- <com.igames2go.t4f.view.CustomTextView -->
+	
+	                <com.igames2go.t4f.view.CustomTextView
+	                    android:layout_width="0dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_weight="1"
+	                    android:text="Your Turn"
+	                    android:textColor="@android:color/black" />
+	
+	                <CheckBox
+	                    android:id="@+id/cb_yourturn"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="0dip" />
+	            </LinearLayout>
+				<ImageView
+				    android:id="@+id/imageView2"
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="@color/gray_color" />
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" 
+	                android:paddingTop="5dp"
+	                android:paddingBottom="5dp">
+	
+	                <!-- <com.igames2go.t4f.view.CustomTextView -->
+	
+	                <com.igames2go.t4f.view.CustomTextView
+	                    android:layout_width="0dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_weight="1"
+	                    android:text="Anyone&apos;s Turn"
+	                    android:textColor="@android:color/black" />
+	
+	                <CheckBox
+	                    android:id="@+id/cb_any1turn"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="0dip" />
+	            </LinearLayout>
+				<ImageView
+			    android:id="@+id/imageView3"
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="@color/gray_color" />
+	            <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal"
+	                android:paddingTop="5dp"
+	                android:paddingBottom="5dp" >
+	
+	                <!-- <com.igames2go.t4f.view.CustomTextView -->
+	
+	                <com.igames2go.t4f.view.CustomTextView
+	                    android:layout_width="0dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_weight="1"
+	                    android:text="Chat Message"
+	                    android:textColor="@android:color/black" />
+	
+	                <CheckBox
+	                    android:id="@+id/cb_chatmsg"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="0dip" />
+	            </LinearLayout>
+	    	</LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="50dip"
+            android:background="@drawable/white_round_rect"
+            android:onClick="loginForDevice"
+            android:orientation="horizontal"
+            android:paddingBottom="15dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="15dip" >
+
+            <!-- <com.igames2go.t4f.view.CustomTextView -->
+
+            <com.igames2go.t4f.view.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Logins For Device..."
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-xhdpi/layout_notification.xml -->

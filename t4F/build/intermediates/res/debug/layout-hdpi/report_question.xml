@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_no_logo"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52dp" >
+
+        <!--
+            <ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/title"
+			android:background="@drawable/trans" android:src="@drawable/homeback" android:layout_gravity="center_vertical"
+			android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+			android:onClick="onClick" />
+        -->
+
+		<com.igames2go.t4f.view.CustomButton
+		    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_back_transparent"
+            android:onClick="goBack" />
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="10dip"
+            android:text="Report Question"
+            android:textColor="@color/nav_bar_title_color"
+            android:textSize="@dimen/textsize_big" />
+
+        <com.igames2go.t4f.view.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_send"
+            android:onClick="send" />
+        <!--
+        android:drawableLeft="@drawable/lines"
+			style="@style/dv_heading_name" />
+		<Button android:layout_width="wrap_content" android:visibility="invisible"
+			android:layout_height="wrap_content" android:id="@+id/btn_inbox_refresh"
+			android:layout_gravity="center_vertical" android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip" android:background="@drawable/refreshback" />
+        -->
+    </RelativeLayout>
+
+    <com.igames2go.t4f.view.CustomEditText
+        android:id="@+id/tv_report"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top"
+        android:textSize="@dimen/textsize_mid"
+        android:padding = "5dip"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"/>
+
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-hdpi/report_question.xml -->

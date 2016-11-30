@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/benfolds/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-2422971e62b897ac5991c3d224b7de0601a8d0c5.jar" />
+    </item>
+    <item
+        jar="/Users/benfolds/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5/7bdb321e86724b16af6134a0fd22fec649eda971/httpmime-4.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7bdb321e86724b16af6134a0fd22fec649eda971">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/httpmime-4.5-890b30ba26831a70ff91b62bc54f7b2f746c85ff.jar" />
+    </item>
+    <item
+        jar="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/classes-92095dbc913f3572fb71c13bf1f105e41d428de3.jar" />
+    </item>
+    <item
+        jar="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/classes-29516a85476b5276ca89329134232eb171f99c4a.jar" />
+    </item>
+    <item
+        jar="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/libs/test1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="537d86459a04a68e3531dec2d7a9ea6dab406daa">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/test1-14f5f6eb0a64259e48278abf75d964c7f74c8c18.jar" />
+    </item>
+    <item
+        jar="/Volumes/MacWork/Eclipse/ADK23/android-sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-02fb5c278f26997b665b4beea95fd28b5dbae759.jar" />
+    </item>
+    <item
+        jar="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.facebook.android/facebook/4.6.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fdb533acd354442dc9764ba0e0b354d203a529e1">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/classes-d4254ce1c8c6b5a7e23be7e7c9f658defed4fde2.jar" />
+    </item>
+    <item
+        jar="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dcb5b75baf05d92e61d5706737200ee55949f97b">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/classes-331344d4dd5e542fd6e85bca269760a6906fe576.jar" />
+    </item>
+    <item
+        jar="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/libs/devsmartandroid.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="72450d67b1eb9455e55f7aa4f85c84982a265e70">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/devsmartandroid-1a84781e364d0023cf72e158cfa59b38e134a945.jar" />
+    </item>
+    <item
+        jar="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="997773777cf3904c11d6764fe3b7668538220e49">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/classes-fec86bbe667fa4e9a9641eda8e371392386808a8.jar" />
+    </item>
+    <item
+        jar="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/classes-ad922411595735c6a810d846b4afec585f1ae58e.jar" />
+    </item>
+    <item
+        jar="/Users/benfolds/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/gson-2.3-ba7c0fa162350f095eb2c8add5f5f73e9a0630a5.jar" />
+    </item>
+    <item
+        jar="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-d4ab1992d4ec9c11cc8cb291707d51370b3d7566.jar" />
+    </item>
+    <item
+        jar="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/libs/FlurryAnalytics-6.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bed3029996f255004cb891ab61bd3a85a108f014">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/FlurryAnalytics-6.1.0-95a1acd1b3e64f5e3a7081c7a119b1aeb3e9bf1a.jar" />
+    </item>
+    <item
+        jar="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/libs/FlurryAds-6.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="addb5959bce19ec757efcd5fdd3cd0e73565f1a4">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/FlurryAds-6.1.0-25540773a4939d595e6948f920ad8e2738f1c210.jar" />
+    </item>
+    <item
+        jar="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
+        <dex dex="/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/build/intermediates/pre-dexed/debug/classes-f26c41110cb928f2e8e1368cdfac8691f5dd76ec.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/btn_optionA_onwronganswerscreen_correctans"
+        android:layout_width="300dip"
+        android:layout_height="35dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/button_a"
+        android:maxLines="1"
+        android:text="Option A"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_optionB_onwronganswerscreen_correctans"
+        android:layout_width="300dip"
+        android:layout_height="35dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/button_b"
+        android:maxLines="1"
+        android:text="Option B"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_optionC_onwronganswerscreen_correctans"
+        android:layout_width="300dip"
+        android:layout_height="35dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/button_c"
+        android:maxLines="1"
+        android:text="Option C"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_optionD_onwronganswerscreen_correctans"
+        android:layout_width="300dip"
+        android:layout_height="35dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/button_d"
+        android:maxLines="1"
+        android:text="Option D"
+        android:visibility="gone" />
+
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-hdpi/layout_onwronganswer_correctoptionbutton.xml -->

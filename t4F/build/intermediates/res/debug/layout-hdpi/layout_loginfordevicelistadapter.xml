@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" 
+    
+    >
+    <ViewStub
+        android:id="@+id/fb_profile_pic_stub"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:inflatedId="@+id/fb_picker_image"
+        android:layout="@layout/layout_fb_picker_image" />
+
+    <TextView
+        android:id="@+id/fb_picker_title"
+        android:layout_width="100dip"
+        android:layout_height="50dip"
+        android:layout_weight="1.0"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="5dip"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" 
+        android:clickable="true"
+        android:onClick="onItemLongClick"/>
+
+    <CheckBox
+        android:id="@+id/deviceNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dip"
+        android:onClick="onCheckBoxClicked"
+        />
+
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-hdpi/layout_loginfordevicelistadapter.xml -->

@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_high_right"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/questionbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/round_rect"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" >
+
+        <include layout="@layout/question_panel" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="5dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_a"
+                android:gravity="center" >
+
+                <com.igames2go.t4f.view.CustomButton
+                    android:id="@+id/btn_optionA"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-35dip"
+                    android:background="#00ffffff"
+                    android:maxLines="1"
+                    android:onClick="optionSelected"
+                    android:tag="@drawable/button_a"
+                    android:textSize="@dimen/textsize_answer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/button_b"
+                android:gravity="center" >
+
+                <com.igames2go.t4f.view.CustomButton
+                    android:id="@+id/btn_optionB"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-35dip"
+                    android:background="#00ffffff"
+                    android:maxLines="1"
+                    android:onClick="optionSelected"
+                    android:tag="@drawable/button_b"
+                    android:textSize="@dimen/textsize_answer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/button_c"
+                android:gravity="center" >
+
+                <com.igames2go.t4f.view.CustomButton
+                    android:id="@+id/btn_optionC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-35dip"
+                    android:background="#00ffffff"
+                    android:maxLines="1"
+                    android:onClick="optionSelected"
+                    android:tag="@drawable/button_c"
+                    android:textSize="@dimen/textsize_answer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/button_d"
+                android:gravity="center" >
+
+                <com.igames2go.t4f.view.CustomButton
+                    android:id="@+id/btn_optionD"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-35dip"
+                    android:background="#00ffffff"
+                    android:maxLines="1"
+                    android:onClick="optionSelected"
+                    android:tag="@drawable/button_d"
+                    android:textSize="@dimen/textsize_answer" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="3dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/round_rect"
+            android:gravity="center_vertical"
+            android:paddingBottom="2dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="2dip" >
+
+            <ProgressBar
+                android:id="@+id/progress_timer"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="20dip"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="30"
+                android:minHeight="20dip"
+                android:paddingBottom="3dip"
+                android:paddingTop="3dip" />
+
+            <com.igames2go.t4f.view.CustomTextView
+                android:id="@+id/tv_timerbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minWidth="40dip"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_mid"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.igames2go.t4f.view.CustomButton
+            android:id="@+id/btn_lifeline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_lifeline"
+            android:gravity="center"
+            android:maxLines="1"
+            android:onClick="useLifeLine"
+            android:textSize="@dimen/textsize_mid" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bottom_margin"
+        android:layout_weight=".3"
+        android:minHeight="@dimen/activity_bottom_margin" />
+
+</LinearLayout>

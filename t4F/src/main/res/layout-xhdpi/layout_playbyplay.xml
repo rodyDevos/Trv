@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_no_logo"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_resign_buttonpanel" />
+
+    <!-- <View
+        android:layout_width="1dip"
+        android:layout_height="@dimen/activity_bottom_margin" /> -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/chat_background"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_chat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_create"
+            android:layout_alignParentTop="true"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null" >
+        </ListView>
+
+        <com.igames2go.t4f.view.CustomButton android:layout_centerHorizontal="true"
+            android:id="@+id/btn_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ad_space"
+            android:background="@drawable/icon_new_message"
+            android:onClick="createMessage" />
+
+        <View
+            android:id="@+id/ad_space"
+            android:layout_width="1dip"
+            android:layout_height="@dimen/activity_bottom_margin"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout>

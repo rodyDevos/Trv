@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/T4Fa.iml" filepath="$PROJECT_DIR$/T4Fa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook/facebook.iml" filepath="$PROJECT_DIR$/facebook/facebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/t4F/t4F.iml" filepath="$PROJECT_DIR$/t4F/t4F.iml" />
+    </modules>
+  </component>
+</project>

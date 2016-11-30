@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert_background"
+    android:gravity="center_horizontal"
+    android:minWidth="200dip"
+    android:orientation="vertical"
+    android:padding="15dip" >
+
+    <!-- com.igames2go.t4f.view.CustomTextView -->
+
+    <include layout="@layout/include_title_divider" />
+
+    <com.igames2go.t4f.view.CustomTextView
+        android:id="@android:id/text2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="15dip"
+        android:gravity="center_horizontal"
+        android:lines="1"
+        android:text="Ready? Let&apos;s do this..."
+        android:textSize="@dimen/textsize_mid"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.igames2go.t4f.view.CustomImageButton
+            android:id="@+id/btn_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/i_button_go" />
+
+        <com.igames2go.t4f.view.CustomImageButton
+            android:id="@+id/btn_sel_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/icon_selectagain"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-xhdpi/dialog_ready_to_go.xml -->

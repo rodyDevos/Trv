@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal|top" 
+    android:orientation="vertical" android:paddingTop="10dip">
+
+    <!--
+         <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight=".5" />
+    -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip" >
+
+        <View 
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+
+        <Button android:onClick = "onQuestionMarkClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/i_button_help" />
+    </LinearLayout>
+
+    <com.igames2go.t4f.view.CustomTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/round_rect"
+        android:minHeight="40dip"
+        android:padding="3dip"
+        android:text="A category has been passed to you by the previous player! Select it below and GOOD LUCK!!!" 
+        android:gravity="center"/>
+
+    <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" 
+        android:gravity="center"
+        android:layout_gravity="center" >
+
+        <include
+            android:id="@+id/category_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/game_category" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout/passed_gameoption.xml -->

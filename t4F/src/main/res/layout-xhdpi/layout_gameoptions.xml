@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/background_high_right"
+	android:orientation="vertical" android:weightSum="800">
+
+	<LinearLayout android:layout_width="wrap_content" android:layout_weight="210"
+		android:layout_height="0dip" android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true" android:orientation="vertical">
+
+		<Button android:id="@+id/btn_back" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_mid"
+			android:background="@drawable/icon_back_transparent" android:onClick="goBack"
+			android:visibility="visible" />
+
+		<LinearLayout android:id="@+id/players_container"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"  android:minHeight="@dimen/activity_bottom_margin"
+			android:orientation="horizontal">
+		</LinearLayout>
+	</LinearLayout>
+	<!-- <View android:layout_width="0dip" android:layout_height="@dimen/activity_bottom_margin"
+		/> -->
+
+
+	<LinearLayout android:id="@+id/option_container" android:layout_weight="540"
+		android:layout_width="fill_parent" android:layout_height="0dip"
+		 android:layout_gravity="center_horizontal|top"
+		android:gravity="center_horizontal|top">
+	</LinearLayout>
+
+	<View android:layout_width="fill_parent" android:layout_height="0dip" android:layout_weight="50"
+		 />
+</LinearLayout>

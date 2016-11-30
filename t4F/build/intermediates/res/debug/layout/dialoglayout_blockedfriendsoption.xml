@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/alert_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/blockedfriendsname_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_setfavorite"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dip"
+        android:onClick="doSetAsFavorite"
+        android:text="@string/setfavorite" />
+
+    <Button
+        android:id="@+id/btn_unblock"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dip"
+        android:layout_marginTop="10dip"
+        android:onClick="doUnblock"
+        android:text="@string/unblock" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_margin="10dip"
+        android:layout_marginTop="10dip"
+        android:onClick="doCancelDialog"
+        android:text="@string/cancel" />
+
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout/dialoglayout_blockedfriendsoption.xml -->

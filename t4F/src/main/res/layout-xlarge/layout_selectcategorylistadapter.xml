@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:baselineAligned="false"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/titleLayout"
+        android:clickable="true">
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtExapnd"
+            android:textColor="@android:color/black"
+            android:visibility="visible"
+            android:gravity="center_vertical|left"
+            android:textSize="28dp"/>
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtGroupTitle"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical|left"
+            android:textSize="28dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:id="@+id/ivCatImage"
+            android:gravity="center_vertical|left"
+            android:src="@drawable/alert_not_entered"
+            android:visibility="visible"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/favorLayout" >
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnFavorite"
+            android:src="@drawable/icon_star_filled"
+            android:background="@android:color/transparent"/>
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2.99 USD"
+            android:id="@+id/txtFavorPrice"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="28dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/actionLayout">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/button_buy"
+            android:id="@+id/btnBuy"
+            android:background="@android:color/transparent"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:id="@+id/cbSelect"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/disclosureLayout">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_next"
+            android:id="@+id/btnDetails"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+</LinearLayout>

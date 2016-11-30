@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" >
+    <LinearLayout
+        android:id="@+id/menu_layout"
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="280dip"
+        android:background="@drawable/menu_background"
+        >
+
+        <TextView
+            android:id="@+id/menu_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_header_background"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/menu_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/divider_black_color"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="2dip"  />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+</LinearLayout><!-- From: file:/Volumes/MacWork/Bitbucket/t4fa_andstudio/T4Fa/t4F/src/main/res/layout-hdpi/menu.xml -->

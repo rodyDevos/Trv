@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <com.igames2go.t4f.view.CustomButton
+        android:id="@+id/go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/icon_home_transparent"
+        android:onClick="goHome"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_width="0dip"
+        android:layout_height="1dip"
+        android:layout_weight="1" />
+
+    <com.igames2go.t4f.view.CustomButton
+        android:id="@+id/btn_scoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/icon_scoreboard"
+        android:onClick="showScoreboard" />
+
+    <LinearLayout
+        android:id="@+id/play_by_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dip" >
+
+        <com.igames2go.t4f.view.CustomButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_playbyplay"
+            android:onClick="showPlaybyplay" />
+
+        <com.igames2go.t4f.view.CustomTextView
+            android:id="@+id/tv_pbp_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="-15dip"
+            android:background="@drawable/icon_chat_badge"
+            android:gravity="center" android:textSize="@dimen/textsize_small"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <com.igames2go.t4f.view.CustomButton
+        android:id="@+id/btn_resign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/icon_resign"
+        android:onClick="resign" />
+
+</LinearLayout>
